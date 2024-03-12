@@ -1,0 +1,184 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.image-grid {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between images */
+}
+
+.image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d8c4bf;
+  padding: 2px;
+}
+
+.image-item img {
+  height:200px;
+  width:200px;
+}
+.card:hover {
+  transform: scale(1.02); /* Increase the size of the card on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+ 
+}
+
+
+.myvideo {
+    width: 100%;
+    height: 100;
+    z-index: -1;
+    
+   
+  }
+  
+  video {
+    width: 100%;
+    height: 89vh;
+    object-fit: cover;
+    
+  }
+  
+  .content {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+    color: #fff;
+  }
+  /* Add this CSS to your stylesheet */
+  .dropdown {
+    position: relative; /* Ensure the dropdown container is relatively positioned */
+    z-index: 2; /* Ensure the dropdown container is above the video */
+  }
+  
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #9EB384;
+    padding: 20px 80px;
+    position: relative; /* Ensure the dropdown container is relatively positioned */
+    z-index: 2;
+    height: 80px;
+    
+  
+  }
+  
+  nav div img{
+    border-radius: 50%;
+    height: 60px;
+  }
+  
+  #navbar
+  {
+    display: flex;
+    
+    justify-content: center;
+  
+  }
+  
+  #navbar li{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+  }
+  #navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    color: aliceblue;
+    z-index: 5;
+  }
+  #navbar li a:hover{
+    color : #9E4784;
+  }
+  #navbar li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #9E4784;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+  }
+  #mobile{
+    display: none;
+  }
+  
+  #mobile i{
+    color: white;
+  }
+  
+  #carouselExampleCaptions
+  {
+    width: 100%;
+    background-color: #CCC8AA;
+   
+  }
+  #carouselExampleCaptions img
+  {
+    object-fit: fill;
+    width: 100%;
+    min-height: 630px;
+    padding-left: 200px;
+    padding-top: 25px;
+    padding-right: 200px;
+    
+  }
+  
+  @media screen and (max-width:768px){
+    #navbar
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top:100px;
+    right:-300px;
+    width: 200px;
+    height: 100vh;
+    background: black;
+    padding: 40px  0 0 2px;
+    transition: 0.3s ease-in-out;
+  
+    
+  }
+  #navbar.active
+  {
+    right: 0px;
+  }
+  #navbar li{
+    margin-bottom: 20px;
+  }
+  #mobile{
+    display: block;
+  }
+  #mobile i{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  }
+  
+  

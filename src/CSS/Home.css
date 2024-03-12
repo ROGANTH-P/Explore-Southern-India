@@ -1,0 +1,48 @@
+.home
+{
+    margin-top:0px;
+}
+.sidebar
+{
+    width:200px;
+    height:100vh;
+    position:fixed;
+}
+.content
+{
+    overflow: auto;
+    margin-left: 205px;
+}
+.home .content .col-md-3
+{
+    border: 2px solid white;
+}
+#second,#third,#fourth
+{
+      margin-left: 200px;
+}
+.geocoding
+{
+    width: 100vw;
+    margin-left: 200px;
+}
+
+.geo{
+    align-items: center;
+}
+
+.parent,.parent_1{
+    width: 100%;
+
+}
+
+.t_r{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.temple{
+    margin-left:5%;
+}
+.shop{
+    margin-left:5%;
+}
